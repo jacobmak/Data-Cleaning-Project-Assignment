@@ -50,7 +50,7 @@ groupdata <- msd %>%
         group_by(subject, activity) %>%
         summarise_each(funs(mean))
 
-write.table(groupdata, "Tidydata.txt", row.names = FALSE)
+write.table(groupdata, "Meandata.txt", row.names = FALSE)
 
 
 
